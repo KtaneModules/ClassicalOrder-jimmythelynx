@@ -240,7 +240,7 @@ public class classicalOrderSrcipt : MonoBehaviour
 			}
 		}
 
-		button.AddInteractionPunch();//adds a little punch to the bomb
+		button.AddInteractionPunch(); //adds a little punch to the bomb
 		Audio.PlaySoundAtTransform("stoneButton", transform);
 		//lastButtonPressed = button;
 
@@ -276,7 +276,7 @@ public class classicalOrderSrcipt : MonoBehaviour
 
 				IEnumerator Strike(KMSelectable pressedButton)
 				{
-					inStrike = true; // this prevents the module from any unwnated button presses
+					inStrike = true; // this prevents the module from any unwanted button presses
 					pressedButton.GetComponentInChildren<MeshRenderer>().material = ledOptions[2]; // the wrongly pressed buttons LED turnes red
 					//yield return new WaitForSeconds(0.3f);
 					int movement = 0;
@@ -295,7 +295,7 @@ public class classicalOrderSrcipt : MonoBehaviour
 						movement++;
 					}
 					pressedButton.GetComponentInChildren<MeshRenderer>().material = ledOptions[0]; // the wrongly pressed buttons LED turnes black
-					inStrike = false; // this prevents the module from any unwnated button presses
+					inStrike = false; // this prevents the module from any unwanted button presses
 				}
 
 				IEnumerator ButtonAnimation(KMSelectable pressedButton)
