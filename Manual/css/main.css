@@ -183,6 +183,7 @@ table {
     border-collapse: separate;
     border-spacing: 5px 0;
     border: none;
+    column-width: 50px;
     
 }
 
