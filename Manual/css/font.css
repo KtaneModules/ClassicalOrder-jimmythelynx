@@ -1,0 +1,14 @@
+/* Manual font */
+@font-face {
+  font-family: 'Special Elite';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Special Elite'), local('SpecialElite-Regular'), url(../font/SpecialElite.ttf);
+}
+
+@font-face {
+    font-family: 'SourceSerifPro-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: local('SourceSerifPro-Regular'), url(../font/SourceSerifPro-Regular.ttf);  
+}
