@@ -310,6 +310,35 @@ public class classicalOrderSrcipt : MonoBehaviour
 					}
 					StopCoroutine("buttonAnimation");
 				}
+#pragma warning disable 414
+    private readonly string TwitchHelpMessage = @"Use !{0} press 1 3 4 MM BL BM to press the buttons in those positions.";
+#pragma warning restore 414
 
+    IEnumerator ProcessTwitchCommand(string input)
+    {
+        string[] validCommands = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "TL", "TM", "TR", "ML", "MM", "MR", "BL", "BM", "BR" };
+        string command = input.Trim().ToUpperInvariant();
+        List<string> parameters = command.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).ToList();
+        if (parameters.First() != "PRESS")
+            yield return "sendtochaterror Command requires a \"press\" parameter.";
+        parameters.Remove("PRESS");
+        if (parameters.Any(x => !validCommands.Contains(x)))
+            yield return string.Format("sendtochaterror Invalid button position at command {0}.", 
+                                        Array.IndexOf(parameters.ToArray(), parameters.First(x => !validCommands.Contains(x))) + 1);
+        yield return null;
+        foreach (string parameter in parameters)
+        {
+            buttons[Array.IndexOf(validCommands, parameter) % 9].OnInteract();
+            yield return new WaitForSeconds(0.2f);
+        }
+    }
 
+    IEnumerator TwitchHandleForcedSolve()
+    {
+        for (int i = 0; i < 9; i++)
+        {
+            buttons.Where(x => x.GetComponentInChildren<TextMesh>().text[0] == solution[stage]).First().OnInteract();
+            yield return new WaitForSeconds(0.2f);
+        }
+    }
 }
