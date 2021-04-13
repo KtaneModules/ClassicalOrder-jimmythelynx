@@ -14,17 +14,18 @@ MonoBehaviour:
   id: classicalOrder
   title: Classical Order
   author: jimmythelynx
-  description: 'Classical Order 1.0
+  description: 'Classical Order 1.1
 
 
     It''s like complex keypad but with more greek. And columns. And stone. And the
     beloved lowercase Xi. Just press the buttons in the correct order.
 
 
+    Module ID: classicalOrder
+
     Created by: jimmythelynx
 
-
-    Module ID: classicalOrder
+    Additional coding by: Danny7007 (Gamepad support, TP support, Autosolver)
 
 
     Repository: https://github.com/jimmythelynx/ClassicalOrder
@@ -35,6 +36,6 @@ MonoBehaviour:
     "stone_on_stone" by: thanvannispen
 
     "stones_kwandalist" by: kwandalist'
-  version: 1.0
+  version: 1.1
   outputFolder: build
   previewImage: {fileID: 2800000, guid: 9c01d1921630a4768b45ede469c1b925, type: 3}

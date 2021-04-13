@@ -177,19 +177,8 @@ table {
     border-collapse: collapse;
 }
 
-.fixed {
-    table-layout: fixed;
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 5px 0;
-    border: none;
-    column-width: 50px;
-    
-}
 
-.nobottom th{
-    border-bottom: none;
-}
+
 
 
 table, th, td {
