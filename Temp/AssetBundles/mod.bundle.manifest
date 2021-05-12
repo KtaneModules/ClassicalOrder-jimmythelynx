@@ -1,0 +1,56 @@
+ManifestFileVersion: 0
+CRC: 267376147
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 535d3214a4cac8b82a0ad323253ee691
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 684f6e42f4b18bf28fe1e6482a191495
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 102
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7dbf02353d67f4fca813e0f80e7b20d2, type: 3}
+- Class: 114
+  Script: {fileID: -1675560866, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+- Class: 114
+  Script: {fileID: 2144496390, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+- Class: 114
+  Script: {fileID: -119419473, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+- Class: 114
+  Script: {fileID: -706292897, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+- Class: 114
+  Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+- Class: 114
+  Script: {fileID: 1702003387, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+- Class: 114
+  Script: {fileID: -381104716, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+Assets:
+- Assets/Audio/stoneButton.wav
+- Assets/classicalOrder.prefab
+- Assets/Audio/solveSound.wav
+Dependencies: []
