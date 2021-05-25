@@ -339,12 +339,18 @@ public class classicalOrderSrcipt : MonoBehaviour
         string command = input.Trim().ToUpperInvariant();
         List<string> parameters = command.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).ToList();
         if (parameters.First() != "PRESS")
+	{
             yield return "sendtochaterror Command requires a \"press\" parameter.";
-        parameters.Remove("PRESS");
+            yield break;
+	}
+	parameters.Remove("PRESS");
         if (parameters.Any(x => !validCommands.Contains(x)))
+	{
             yield return string.Format("sendtochaterror Invalid button position at command {0}.", 
                                         Array.IndexOf(parameters.ToArray(), parameters.First(x => !validCommands.Contains(x))) + 1);
-        yield return null;
+            yield break;
+	}
+	yield return null;
         foreach (string parameter in parameters)
         {
             buttons[Array.IndexOf(validCommands, parameter) % 9].OnInteract();
