@@ -14,7 +14,7 @@ MonoBehaviour:
   id: classicalOrder
   title: Classical Order
   author: jimmythelynx
-  description: 'Classical Order 1.21
+  description: 'Classical Order 1.22
 
 
     It''s like complex keypad but with more greek. And columns. And stone. And the
@@ -38,6 +38,6 @@ MonoBehaviour:
     "stone_on_stone" by: thanvannispen
 
     "stones_kwandalist" by: kwandalist'
-  version: 1.21
+  version: 1.22
   outputFolder: build
   previewImage: {fileID: 2800000, guid: 9c01d1921630a4768b45ede469c1b925, type: 3}
